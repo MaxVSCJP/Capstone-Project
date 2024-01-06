@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+}
+
+
+nav{
+    background-color: #3C3A39;
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+}
+
+nav h2 {
+    margin: 0;
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+nav button{
+    background-color: transparent;
+    border: none;
+    align-items:end;
+}
+
+nav button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+.Headline{
+    background: #1C1A19 url("Back Image.png") no-repeat scroll bottom right;
+    padding-top: 20%;
+    padding-left: 6%;
+    padding-bottom: 8%;
+    height: 590px;
+    
+}
+
+.Primary-text{
+    width: 327px;
+    height: 124px;
+    padding-top: 10%;
+    
+    
+}
+    
+.Primary-text h1{
+    color: #FF6B00;
+    margin-top: 0;
+    font-family: 'Crete Round';
+    font-size: 56px;
+    font-weight: 550;
+    line-height: 64px;
+    letter-spacing: 0.3700000047683716px;
+    text-align: left;
+}
+
+.Supporting-Text{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFF5E1;
+    width: 327px;
+    height: 27px;
+    padding-top: 3%;
+    
+
+}
+
+.Supporting-Text h4{
+    margin-top: 0;
+}
+
+.Description{
+    width: 327px;
+    height: 150px;
+    
+}
+
+.Description p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    
+}
+
+
+.Social-Media{
+    display: flex;
+    
+}
+
+.Social-Media button{
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding-top: 4%;
+    
+}
+
+.Social-Media button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
