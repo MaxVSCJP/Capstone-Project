@@ -1,9 +1,13 @@
-@media screen and (max-width: 768px) {
-    body {
-        margin: 0;
-    }
+html{
+    font-size: 8px;
+}
 
+body {
+    margin: 0;
+}
 
+@media screen and (max-width:768px){
+    
     nav{
         background-color: #3C3A39;
         display: flex;
@@ -29,17 +33,17 @@
     }
     
     nav button:hover{
-        opacity: 0.7;
+        opacity: 0.8;
         cursor: pointer;
     }
     
     
     .Headline{
-        background: #1C1A19 url("Back Image.png") no-repeat scroll bottom right;
+        background: #1C1A19 url("images/Back Image.png") no-repeat scroll bottom right;
         padding-top: 20%;
         padding-left: 6%;
         padding-bottom: 8%;
-        height: 100vh;
+        height: 590px;
         
     }
     
@@ -114,10 +118,116 @@
     }
     
     .Social-Media button:hover{
-        opacity: 0.7;
+        opacity: 0.9;
         cursor: pointer;
     }
+
+
+
+    .Recent-Works{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 120px;
+        padding: bottom 120px;
+    }
+
+    .Recent-Works > h1 {
+        padding-bottom: 24px;
+        border-bottom: 1px solid black;
+        margin-bottom: 60px;
+        font-size: 5rem;
+    }
+
+    .Multi-Post{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 80vw;
+    }
+
+    .Multi-Post > h2{
+        margin-bottom: 0;
+        font-size: 4rem;
+    }
+
+    .Multi-Post p{
+        font-size: 2rem;
+    }
+
+
+    .Project-Buttons button{
+        background-color: transparent;
+        border: 1px solid black;
+        padding:10px;
+        margin-right: 12px;
+        
+    }
+
+    .Multi-Post > button {
+        width:fit-content;
+        background-color: #FF6B00;
+        border: none;
+        color: white;
+        padding: 12px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+
+
+
+    .PAPD{
+        background-image: url("images/PAPD-background.png");
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 80vw;
+        height: 386px;
+        position: relative;
+    }
+
+    .Art-textblock{
+        padding-top: 64px;
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .Art-textblock h2{
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+
+    .Art-textblock p{
+        font-size: 2rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+    }
+
+    .Art-Buttons button{
+        background-color: rgba(128, 128, 128, 0.6);
+        color: white;
+        border: none;
+        padding:10px;
+        margin-right: 12px;
+        font-size: 2rem;
+    }
+
+
+    .PAPD > .See{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #FF6B00;
+        border: none;
+        color: white;
+        padding: 16px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+
 }
-
-
-
