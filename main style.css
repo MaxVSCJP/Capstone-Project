@@ -13,76 +13,65 @@ body {
         display: flex;
         padding: 2%;
         justify-content: space-between;
+        
     }
     
-    nav h2 {
+    nav a {
         margin: 0;
         color: white;
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: center;
+        text-decoration: none;
+        font: 700 2rem "Roboto";
+        transition: all 0.3s ease-in-out;
+
     }
+
+    nav a:hover{
+        transform: translateX(20px) scale(1.3);
+    }
+
     
     nav button{
         background-color: transparent;
         border: none;
         align-items:end;
+        transition: all 0.3s ;
     }
     
     nav button:hover{
-        opacity: 0.8;
         cursor: pointer;
+        transform: translateX(-10px) scale(1.2);
+        
     }
     
     
     .Headline{
         background: #1C1A19 url("images/Back Image.png") no-repeat scroll bottom right;
-        padding-top: 20%;
-        padding-left: 6%;
-        padding-bottom: 8%;
+        padding: 20% 0% 8% 6%;
         height: 590px;
-        
     }
+
+
     
     .Primary-text{
         width: 327px;
         height: 124px;
         padding-top: 10%;
-        
-        
     }
         
     .Primary-text h1{
         color: #FF6B00;
         margin-top: 0;
-        font-family: 'Crete Round';
-        font-size: 56px;
-        font-weight: 550;
-        line-height: 64px;
-        letter-spacing: 0.3700000047683716px;
-        text-align: left;
+        font: 550 7rem 'Crete Round';
     }
     
     .Supporting-Text{
-        font-family: Roboto;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 32px;
-        letter-spacing: 0em;
-        text-align: left;
+        font:  700 3rem "Roboto" ;
         color: #FFF5E1;
-        width: 327px;
-        height: 27px;
         padding-top: 3%;
-        
-    
     }
     
     .Supporting-Text h4{
-        margin-top: 0;
+        margin: 0 ;
     }
     
     .Description{
@@ -92,20 +81,13 @@ body {
     }
     
     .Description p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
+        font: 400 2.5rem/1.25 Arial, Helvetica, sans-serif;
         color: #FFFFFF;
-        
     }
     
     
     .Social-Media{
         display: flex;
-        
     }
     
     .Social-Media button{
@@ -115,11 +97,12 @@ body {
         height: 40px;
         padding-top: 4%;
         
+        transition: all 0.3s;
     }
     
     .Social-Media button:hover{
-        opacity: 0.9;
         cursor: pointer;
+        transform: translateY(-8px);
     }
 
 
@@ -165,17 +148,31 @@ body {
         
     }
 
+    .Project-Buttons button{
+        transition: all 0.3s;
+    }
+
+    .Project-Buttons button:hover{
+        transform: translateY(-8px);
+        cursor: pointer;
+    }
+
     .Multi-Post > button {
         width:fit-content;
         background-color: #FF6B00;
         border: none;
         color: white;
         padding: 12px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-weight: 800;
-        font-size: 2rem;
+        font: 800 2rem 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        transition: all 0.3s;
     }
 
+    .Multi-Post > button:hover{
+        transform: translateY(-8px);
+        font-size: 2.6rem;
+        cursor: pointer;
+    }
 
 
     .PAPD{
@@ -202,9 +199,7 @@ body {
     }
 
     .Art-textblock p{
-        font-size: 2rem;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        
+        font: 400 2rem 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     .Art-Buttons button{
@@ -214,10 +209,16 @@ body {
         padding:10px;
         margin-right: 12px;
         font-size: 2rem;
+
+        transition: all 0.3s;
     }
 
+    .Art-Buttons button:hover{
+        transform: translateY(-8px);
+        cursor: pointer;
+    }
 
-    .PAPD > .See{
+    .PAPD .See{
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -225,9 +226,167 @@ body {
         border: none;
         color: white;
         padding: 16px;
+        font: 800 2rem 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        transition: all 0.3s;
+    }
+
+    .PAPD .See:hover{
+        font-size: 2.7rem;
+        cursor: pointer;
+    }
+
+
+
+    .About-Me{
+        background-color: #1C1A19;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    .Personal{
+        padding-top: 60px;
+        width: 80vw;
+        
+    }
+
+    .For-image{
+        height: 212px;
+        width: 100vw;
+        background: url("images/Personal-Background.png") no-repeat bottom right ;
+    }
+
+
+    .Personal h1{
+        color: #FF6B00;
+        font-size: 8rem;
+        margin-bottom: 0;
+        align-items: center;
+    }
+
+    .Personal p{
+        font-size: 2rem;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-weight: 800;
+        
+    }
+
+    .Personal button{
+        background-color: #FF6B00;
+        padding: 8px;
+        border: none;
+        color: white;
+        font-weight:600;
+
+        transition: all 0.3s;
+    }
+
+    .Personal #resume:hover {
         font-size: 2rem;
     }
 
+    #Divide-Bar{
+        width:80vw;
+    }
+
+    .Ability{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Ability h2{
+        font: 400 4rem Roboto;
+    }
+
+    .Orange{
+        margin-right: 24px;
+    }
+
+    .Ability h4{
+        font: 300 2.5rem Roboto;
+    }
+
+    .Contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+    }
+
+    .Contact h1{
+        width: 80vw;
+        font: 700 4rem 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    .Contact form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #fname{
+        border-top:none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid ;
+        margin-bottom: 24px;
+        padding: 8px 0 12px 8px;
+        border-color: #bebebe;
+        
+    }
+
+    #E-mail{
+        border-top:none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid ;
+        margin-bottom: 24px;
+        padding: 8px 0 12px 8px;
+        border-color: #bebebe;
+    }
+
+    #Notes{
+        border: none;
+        padding: 12px;
+        font: italic 200 1.8rem 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color:rgba(220, 220, 220, 0.2);
+    }
+
+    #Get-in-touch{
+        background-color: #FF6B00;
+        padding: 16px;
+        border: none;
+        color: white;
+        font-weight:600;
+        margin-bottom: 80px ;
+
+        transition: all 0.3s;
+    }
+
+    #Get-in-touch:hover{
+        scale: 1.12;
+    }
+
+    .Contact .Social{
+        display: flex;
+
+    }
+
+    .Contact .Social button{
+        background-color: transparent;
+        border: none;
+        padding: 0 8px 16px 8px;
+
+        transition: all 0.3s;
+    }
+
+    .Contact .Social button:hover{
+        cursor: pointer;
+        transform: translateY(-8px);
+    }
+
+    
 }
